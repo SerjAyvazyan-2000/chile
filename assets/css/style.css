@@ -475,7 +475,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .gallery { columns: 2; column-gap: 10px; }
   .gallery button { margin-bottom: 10px; }
   .masters__track { grid-auto-columns: 82%; }
-  .ba__frame { aspect-ratio: 4/5; }
+  .ba__frame { aspect-ratio: 4/5 !important; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; margin-inline: calc(var(--pad) * -1); padding-inline: var(--pad); scrollbar-width: none; }
   .tab { white-space: nowrap; }
 }
@@ -500,3 +500,4 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .footer__logo { width: min(520px, 80vw); height: auto; display: block; }
 @media (max-width: 640px) { .logo__img { height: 50px; } }
 .section--accent .h2 em { color: var(--ink); }
+.ba__frame { max-width: 560px; justify-self: center; width: 100%; }

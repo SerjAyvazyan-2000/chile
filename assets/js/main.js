@@ -125,6 +125,11 @@
   $("[data-ba-text]").textContent = ba.text;
   $("[data-ba-before]").src = ba.before;
   $("[data-ba-after]").src = ba.after;
+  if (ba.beforeLabel) { $(".ba__tag--l", frame).textContent = ba.beforeLabel; $("[data-ba-before]").alt = ba.beforeLabel; }
+  if (ba.afterLabel) { $(".ba__tag--r", frame).textContent = ba.afterLabel; $("[data-ba-after]").alt = ba.afterLabel; }
+  if (ba.eyebrow) $(".ba .eyebrow").textContent = ba.eyebrow;
+  if (ba.ratio) frame.style.aspectRatio = ba.ratio;
+  $(".ba__range", frame).setAttribute("aria-label", "Сравнить: " + (ba.beforeLabel || "до") + " / " + (ba.afterLabel || "после"));
   $(".ba__range", frame).addEventListener("input", (e) => frame.style.setProperty("--pos", e.target.value + "%"));
   }
 
