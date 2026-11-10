@@ -317,12 +317,6 @@
   }), { threshold: 0.15 });
   $$(".reveal, .stat").forEach((el) => io.observe(el));
 
-  /* ---------- Магнитная кнопка ---------- */
-  if (fine && !reduced) $$(".magnetic").forEach((b) => {
-    b.addEventListener("mousemove", (e) => { const r = b.getBoundingClientRect(); b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * 0.25}px, ${(e.clientY - r.top - r.height / 2) * 0.35}px)`; });
-    b.addEventListener("mouseleave", () => (b.style.transform = ""));
-  });
-
   /* ---------- Старт ---------- */
   const start = () => setTimeout(() => document.body.classList.add("is-loaded"), reduced ? 0 : 900);
   document.readyState === "complete" ? start() : addEventListener("load", start);
