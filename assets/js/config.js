@@ -187,6 +187,6 @@ window.SITE = {
   /* --- Подвал --- */
   footer: {
     legal: "Салон красоты «Чили» · Санкт-Петербург, Синявинская ул., 6",
-    credit: { text: "Сайт разработан в студии Сайтика", url: "https://студия-сайтика.рф/" },
+    credit: { text: "Сайт разработан в студии Сайтика", url: "https://студия-сайтика.рф/?utm_source=client_sites&utm_medium=referral&utm_campaign=footer" },
   },
 };
